@@ -33,7 +33,13 @@ public class Person {
 
     @Column(nullable = false)
     private String lastName;
+    
+    @Column(nullable = false)
+    private String job;
 
+    @Column(nullable = false)
+    private String favoriteHobby;
+    
     @Column(nullable = false, unique = true)
     private String cpf;
 

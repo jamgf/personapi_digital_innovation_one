@@ -29,6 +29,14 @@ public class PersonDTO {
     private String lastName;
 
     @NotEmpty
+    @Size(min = 2, max = 100)
+    private String job;
+    
+    @NotEmpty
+    @Size(min = 2, max = 100)
+    private String favoriteHobby;
+    
+    @NotEmpty
     @CPF
     private String cpf;
 
